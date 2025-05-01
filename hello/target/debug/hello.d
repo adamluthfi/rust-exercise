@@ -1,0 +1,1 @@
+/Users/octomobilea/Developer/BE/Learning/rust_exercise/hello/target/debug/hello: /Users/octomobilea/Developer/BE/Learning/rust_exercise/hello/src/lib.rs /Users/octomobilea/Developer/BE/Learning/rust_exercise/hello/src/main.rs
