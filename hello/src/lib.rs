@@ -16,3 +16,7 @@ pub fn method1() {
 
     println!("data is {}", data);
 }
+
+pub fn do_stuff(s: &mut String) {
+    s.insert_str(0, "Hi, ");
+}
