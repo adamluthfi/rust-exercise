@@ -18,7 +18,7 @@ fn main() {
 
     let fox = RedFox {
         enemy: true,
-        life: 70,
+        life: 90,
     };
     println!("{}", fox.enemy);
     println!("{}", fox.life);
@@ -57,7 +57,7 @@ fn main() {
     handle.join().unwrap();
 }
 
-struct  RedFox {
+struct RedFox {
     enemy: bool,
     life: u8
 }
