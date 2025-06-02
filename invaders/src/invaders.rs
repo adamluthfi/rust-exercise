@@ -1,4 +1,4 @@
-use std::{cmp::{max, min}, time::Duration};
+use std::{cmp::max, time::Duration};
 use rusty_time::Timer;
 use crate::{frame::{Drawable, Frame}, NUM_COLS, NUM_ROWS};
 

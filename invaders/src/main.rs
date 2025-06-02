@@ -1,6 +1,6 @@
 use std::{
     error::Error,
-    sync::mpsc::{self, Receiver},
+    sync::mpsc::{self},
     time::{Duration, Instant},
     {io, thread},
 };
