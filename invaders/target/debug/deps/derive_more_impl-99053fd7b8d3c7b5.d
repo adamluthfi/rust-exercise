@@ -1,0 +1,9 @@
+/Users/octomobilea/Developer/BE/Learning/rust_exercise/invaders/target/debug/deps/libderive_more_impl-99053fd7b8d3c7b5.dylib: /Users/octomobilea/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/lib.rs /Users/octomobilea/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/utils.rs /Users/octomobilea/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/is_variant.rs /Users/octomobilea/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/../README.md /Users/octomobilea/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/../doc/is_variant.md
+
+/Users/octomobilea/Developer/BE/Learning/rust_exercise/invaders/target/debug/deps/derive_more_impl-99053fd7b8d3c7b5.d: /Users/octomobilea/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/lib.rs /Users/octomobilea/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/utils.rs /Users/octomobilea/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/is_variant.rs /Users/octomobilea/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/../README.md /Users/octomobilea/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/../doc/is_variant.md
+
+/Users/octomobilea/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/lib.rs:
+/Users/octomobilea/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/utils.rs:
+/Users/octomobilea/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/is_variant.rs:
+/Users/octomobilea/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/../README.md:
+/Users/octomobilea/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/../doc/is_variant.md:
