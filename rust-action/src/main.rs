@@ -1,5 +1,3 @@
-use core::time;
-
 fn main() {
 
     println!("{}", "Hello World");
@@ -135,6 +133,7 @@ fn tuple() {
     println!("{:?}", data);
 }
 
+#[allow(dead_code)]
 fn unit() {
     println!("helloo")
 }
@@ -181,6 +180,7 @@ fn two_dimensional_array() {
     println!("{:?}", matrix[1][2]);
 }
 
+#[allow(dead_code)]
 const MAXIMUM: i32 = 300;
 
 #[test]
@@ -208,14 +208,14 @@ fn stack_heap() {
     function_a();
     function_b();
 }
-
+#[allow(dead_code)]
 fn function_a() {
     let a = 10;
     let b = String::from("Kurniawan");
 
     println!("{} {}", a, b)
 }
-
+#[allow(dead_code)]
 fn function_b() {
     let a = 10;
     let b = String::from("Eko");
@@ -262,6 +262,8 @@ fn data_copy() {
     let a = 10;
     let mut b = a;
 
+    println!("{} {} ", a, b);
+    
     b = 20;
 
     println!("{} {} ", a, b);
