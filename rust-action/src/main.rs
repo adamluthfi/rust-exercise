@@ -1,3 +1,5 @@
+use core::time;
+
 fn main() {
 
     println!("{}", "Hello World");
@@ -219,4 +221,166 @@ fn function_b() {
     let b = String::from("Eko");
 
     println!("{} {}", a, b)
+}
+
+#[test]
+fn string() {
+    let name: &str = " eko kurniawan khanady ";
+    let trim: &str = name.trim();
+
+    println!("{} ", name);
+    println!("{} ", trim);
+}
+
+#[test]
+fn string_tyoe() {
+    let mut name: String = String::from("eko kurniawan");
+    println!("{} ", name);
+
+    name.push_str(" khanedy");
+    println!("{} ", name);
+
+    let budi = name.replace("eko", "budi");
+    println!("{} ", budi)
+}
+
+#[test]
+fn ownership_rules() {
+    let a = 10;
+    println!("{} ", a);
+
+    {
+        let b = 10;
+        println!("{} ", b);
+    }
+
+    println!("{} ", a);
+}
+
+#[test]
+fn data_copy() {
+    let a = 10;
+    let mut b = a;
+
+    b = 20;
+
+    println!("{} {} ", a, b);
+}
+
+#[test]
+fn ownership_movement() {
+    let name1: String = String::from("EKO");
+    println!("{}", name1);
+
+    let name2: String = name1;
+    println!("{} ", name2);
+    // println!("{} ", name1);
+}
+
+#[test]
+fn clone() {
+    let name1 = String::from("Eko");
+    let name2 = name1.clone();
+
+    println!("{} {} ", name1, name2)
+}
+
+#[test]
+fn if_expression() {
+    
+    let value = 7;
+
+    let result: &str = if value >= 8 {
+        "Good"
+    } else if value >= 6 {
+        "Not bad"
+    } else if value >= 3 {
+        "Bad"
+    } else {
+        "Very Bad"
+    };
+
+    println!("{} ", result);
+}
+
+#[test]
+fn loop_expression() {
+    let mut counter = 0;
+
+    loop {
+        counter += 1;
+
+        if counter > 0 {
+            break;
+        } else if counter % 2 == 0 {
+            continue;
+        };
+
+        println!("Counter : {}", counter);
+    }
+
+}
+
+#[test]
+fn loop_return_value() {
+    let mut counter = 0;
+
+    let result = loop {
+        counter += 1;
+        if counter >10 {
+            break counter * 2;
+        }
+    };
+    println!("Result : {}", result);
+}
+
+#[test]
+fn loop_label() {
+    let mut number = 1;
+
+    'outer: loop {
+        let mut i = 1;
+        loop {
+            if number > 10 {
+                break 'outer;
+            }
+            
+            println!("{} x {} = {}", number, i, number * i);
+            i += 1;
+
+            if i > 10 {
+                break;
+            }
+        }
+        number += 1;
+    }
+}
+
+#[test]
+fn while_loop() {
+    let mut counter = 0;
+
+    while counter <= 10 {
+        if counter % 2 == 0 { 
+            println!("Counter : {}", counter);
+        }
+
+        counter += 1;
+
+    }
+}
+
+#[test]
+fn array_iteration() {
+    let array: [&str; 5] = ["A", "B", "C", "D", "E"];
+    let mut index = 0;
+
+    // while index < array.len() {
+    //     println!("Value : {}", array[index]);
+    //     index += 1;
+    // }
+
+    for value in array {
+        println!("Value : {}", value);
+    }
 }
