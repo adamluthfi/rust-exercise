@@ -375,10 +375,10 @@ fn array_iteration() {
     let array: [&str; 5] = ["A", "B", "C", "D", "E"];
     let mut index = 0;
 
-    // while index < array.len() {
-    //     println!("Value : {}", array[index]);
-    //     index += 1;
-    // }
+    while index < array.len() {
+        println!("Value : {}", array[index]);
+        index += 1;
+    }
 
     for value in array {
         println!("Value : {}", value);
