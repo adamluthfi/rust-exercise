@@ -381,8 +381,113 @@ fn array_iteration() {
         println!("Value : {}", array[index]);
         index += 1;
     }
+}
 
+#[test]
+fn array_iteration_for_loop() {
+    let array: [&str; 5] = ["A", "B", "C", "D", "E"];
     for value in array {
         println!("Value : {}", value);
     }
+}
+
+#[test]
+fn range() {
+    let array: [&str; 5] = ["A", "B", "C", "D", "E"];
+
+    let range = 0..5;
+    println!("Start : {}", range.start);
+    println!("End : {}", range.end);
+
+    for i in 0..5 { 
+        println!("Value : {}", array[i]);
+    }
+}
+
+#[test]
+fn range_inclusive() {
+    let array: [&str; 5] = ["A", "B", "C", "D", "E"];
+
+    let range = 0..=4;
+    println!("Start : {}", range.start());
+    println!("End : {}", range.end());
+
+    for i in range { 
+        println!("Value : {}", array[i]);
+    }
+}
+
+#[allow(dead_code)]
+fn say_hello() {
+    println!("Hello");
+}
+
+#[test]
+fn test_say_hello() {
+    say_hello();
+    say_hello();
+}
+
+#[allow(dead_code)]
+fn say_goodbye(first_name: &str, last_name: &str) {
+    println!("Goodbye {} {}", first_name, last_name);
+}
+
+#[test]
+fn test_say_goodbye() {
+    say_goodbye("Eko", "Kurniawan");
+    say_goodbye("Budi", "Santoso");
+}
+
+#[allow(dead_code)]
+fn factorail_loop(value: i32) -> i32 {
+    if value < 1 {
+        return 0;
+    }
+
+    let mut result = 1;
+    for i in 1..=value {
+        result *= i;
+    }
+    result
+}
+
+#[test]
+fn test_factorail_loop() {
+    let result = factorail_loop(5);
+    println!("{}", result);
+
+    let result = factorail_loop(-10);
+    println!("{}", result);
+}
+
+#[allow(dead_code)]
+fn print_text(text: String, times: u32) {
+    if times == 0 {
+        return; 
+    } else {
+        println!("{}", text);
+    }
+
+    print_text(text, times - 1);
+}
+
+#[test]
+fn test_print_text() {
+    print_text(String::from("David"), 5);
+}
+
+#[allow(dead_code)]
+fn factorail_recursion(value: u32) -> u32 {
+    if value <= 1 {
+        return 1;
+    }
+
+    value * factorail_recursion(value - 1)
+}
+
+#[test]
+fn test_factorail_recursion() {
+    let result = factorail_recursion(5);
+    println!("{}", result);
 }
