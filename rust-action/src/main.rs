@@ -491,3 +491,57 @@ fn test_factorail_recursion() {
     let result = factorail_recursion(5);
     println!("{}", result);
 }
+#[allow(dead_code)]
+fn print_number(number: i32) {
+    println!("number {}", number);
+}
+
+#[allow(dead_code)]
+fn hi(name: String) {
+    println!("name {}", name);
+}
+
+#[test]
+fn test_hi() {
+    let number = 10;
+    print_number(number);
+    println!("number {}", number);
+
+    let name = String::from("Eko");
+    hi(name);
+    // println!("name {}", name);
+}
+
+#[allow(dead_code)]
+fn full_name(first_name: String, last_name: String) -> String {
+    format!("{} {}", first_name, last_name)
+}
+
+#[test]
+fn test_full_name() {
+    let first_name = String::from("Eko");
+    let last_name = String::from("Kurniawan");
+
+    let full_name = full_name(first_name, last_name);
+    println!("name {}", full_name);
+    // println!("first name {}", first_name);
+    // println!("last name {}", last_name);
+}
+
+#[allow(dead_code)]
+fn full_name_return_tuple(first_name: String, last_name: String) -> (String, String, String) {
+    let full_name = format!("{} {}", first_name, last_name);
+
+    (first_name, last_name, full_name)
+}
+
+#[test]
+fn test_full_name_return_tuple() {
+    let first_name = String::from("Eko");
+    let last_name = String::from("Kurniawan");
+
+    let (first_name, last_name, full_name) = full_name_return_tuple(first_name, last_name);
+    println!("full name {}", full_name);
+    println!("first name {}", first_name);
+    println!("last name {}", last_name);
+}
